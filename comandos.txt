@@ -1,0 +1,468 @@
+    1  sudo apt-get update
+    2  wget -qO- https://get.docker.com/ | sh
+    3  sudo gpasswd -a ${USER} docker
+    4  exit
+    5  docker info
+    6  exit
+    7  ll
+    8  exit
+    9  sudo apt-get install open-ssh
+   10  sudo apt-get install openssh-server
+   11  ping 192.168.100.11
+   12  ssh garellano@192.168.100.11
+   13  ifconfig | grep 192
+   14  sudo apt install net-tools
+   15  ifconfig | grep 192
+   16  ifconfig
+   17  telnet google.com 80
+   18  exit
+   19  docker info
+   20  docker run -it ubuntu bash
+   21  ll
+   22  tree
+   23  sudo apt install tree
+   24  tree
+   25  exit
+   26  tree
+   27  sudo apt install tree
+   28  pwd
+   29  docker info
+   30  docker run -it ubuntu bash
+   31  ll
+   32  docker run -it ubuntu bash
+   33  pwd
+   34  docker run -it ubuntu bash
+   35  docker ps -a
+   36  docker commit 723897bb1c97 gustavo
+   37  docker run -it gustavo bash
+   38  docker ps 
+   39  doker ps -a
+   40  docker ps -a
+   41  docker commit 4f8a3c118782 gustavo
+   42  docker run -it gustavo bash
+   43  docker run -it gustavoarellano/jdk18 bash
+   44  psw
+   45  pws
+   46  pwd
+   47  docker run -it gustavoarellano/jdk18 bash
+   48  pwd
+   49  docker run -it ubuntu bash
+   50  ps -a 
+   51  docker ps -a
+   52  docker commit 6bc0ff05390b gustavo
+   53  docker run -it gustavo bash
+   54  docker run -d -p 12345:80 nginx
+   55  docker ps
+   56  docker run -d -p 80:80 nginx
+   57  docker ps
+   58  nano index.html
+   59  cat index.html
+   60  docker ps 
+   61  docker exec -it  3eb952be195d bash
+   62  docker stop 3eb952be195d
+   63  pwd
+   64  ll
+   65  mkdir htmlGrande
+   66  cd htmlGrande
+   67  cd..
+   68  cd 
+   69  mv index.html htmlGrande
+   70  ll
+   71  cd htmlGrande
+   72  ll
+   73  cat index.html
+   74  docker run -d -p 80:80 -v /home/gustavo/htmlGrande:/usr/share/nginx/html nginx
+   75  docker ps
+   76  stop
+   77  docker stop 3d3107490d12
+   78  docker run -d -p 80:80 -v /home/gustavo/htmlGrande:/usr/share/nginx/html nginx
+   79  docker ps
+   80  docker stop 3d3107490d12
+   81  docker run -d -p 80:80 -v /home/gustavo/htmlGrande:/usr/share/nginx/html nginx
+   82  docker run -d -p 90:80 -v /home/gustavo/htmlGrande:/usr/share/nginx/html nginx
+   83  nano index.html
+   84  docker ps -a
+   85  docker ps
+   86  docker stop bf6b1a5c5b9b
+   87  docker stop d226ea0ac4dd 
+   88  docker ps
+   89  docker stop f8138b4e504f
+   90  docker ps
+   91  ll 
+   92  pwd
+   93  ll
+   94  cat index.html
+   95  nano index.html
+   96  cd..
+   97  cd 
+   98  cd htmlGrande
+   99  git
+  100  mvp
+  101  pwd
+  102  mkdir curso-dgp
+  103  cd curso-dgp
+  104  git
+  105  sudo apt-get install git
+  106  git
+  107  git .version
+  108  git -version
+  109  git clonehttps://github.com/dgpeCurso13/ej01.git
+  110  git clone https://github.com/dgpeCurso13/ej002.git
+  111  pwd
+  112  ll
+  113  cd ej002
+  114  ll
+  115  cat gus.txt
+  116  docker images
+  117  cd..
+  118  cd ..
+  119  docker 
+  120  docker pull kebblar/jdk18-utf8-debug-maven
+  121  git images
+  122  docker images
+  123  pwd
+  124  docker info
+  125  docker run -it -p 7171:8080 ubuntu bash
+  126  cde eje01
+  127  cd eje01
+  128  ll
+  129  cd curso-dgp
+  130  pwd
+  131  ll
+  132  cd ..
+  133  docker
+  134  git branch -a
+  135  git
+  136  git pull
+  137  git branch -a
+  138  ll
+  139  cd curso-dgp
+  140  git branch -a
+  141  ll
+  142  cd ej002
+  143  git branch -a
+  144  git pull
+  145  docker run -t -p 7171:8080 ubuntu bash
+  146  cat gus.txt
+  147  docker run -t -p 7171:8080 ubuntu bash
+  148  docker run -it -p 7171:8080 ubuntu bash
+  149  curl http://localhost:8080/jersey-sample/tarea?gusgus
+  150  clear
+  151  cd cursop-dgp
+  152  ll
+  153  ll -s
+  154  cd /home/gustavo
+  155  ll
+  156  cd dgp-curso
+  157  cd curso-dgp
+  158  mkdir final
+  159  cd final
+  160  git clone https://github.com/arellano-gustavo/jersey-sample.git
+  161  pwd
+  162  docker -it -v /home/gustavo/curso-dgp/final/jersey-sample/:/jerser-sample kebblar/jdk-utf8-debug-maven bash
+  163  docker run -it -v /home/gustavo/curso-dgp/final/jersey-sample/:/jerser-sample kebblar/jdk-utf8-debug-maven bash
+  164  docker ps
+  165  docker ps -a
+  166  docker run -it -v /home/gustavo/curso-dgp/final/jersey-sample/:/jerser-sample kebblar/jdk18-utf8-debug-maven
+  167  docker run -it -v /home/gustavo/curso-dgp/final/jersey-sample/:/jersey-sample kebblar/jdk18-utf8-debug-maven
+  168  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/final/jersey-sample/:/jersey-sample kebblar/jdk18-utf8-debug-maven
+  169  docker run -it -p 8089:8080 -v /home/gustavo/curso-dgp/final/jersey-sample/:/jersey-sample kebblar/jdk18-utf8-debug-maven
+  170  docker ps
+  171  docker ps -a
+  172  docker stop efea51f11603
+  173  docker ps -a
+  174  docker stop efea51f11603
+  175  docker ps -a
+  176  docker stop 
+  177  clear
+  178  docker ps
+  179  docker ps -a
+  180  docker stop f26fc5999e39
+  181  docker stop 2650c6ea899b
+  182  docker stop f61d14c7d127
+  183  docker stop 723897bb1c97
+  184  docker stop 4f8a3c118782
+  185  docker stop 25a6b4572b38
+  186  docker ps -a
+  187  docker rm $(docker ps -aq)
+  188  docker ps -a
+  189  clear
+  190  ll
+  191  cd ..
+  192  mkdir final1
+  193  cd final1
+  194  git clone https://github.com/arellano-gustavo/jersey-sample.git
+  195  ll
+  196  docker ps
+  197  docker pwd
+  198  pwd
+  199  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/final1:/jersey-sample kebblar/jdk18-utf8-debug-maven
+  200  docker ps -a
+  201  docker stop e98b46db3edc
+  202  clear
+  203  ll
+  204  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/final1/jersey-sample:/jersey-sample kebblar/jdk18-utf8-debug-maven
+  205  cd ..
+  206  clear
+  207  mkdir final2
+  208  cd final2
+  209  cd ..
+  210  ll
+  211  git clone https://github.com/arellano-gustavo/vertx-sample.git
+  212  ll
+  213  cd final2 
+  214  ll
+  215  docker ps -a
+  216  docker ps 
+  217  pwd
+  218  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven
+  219  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven bash
+  220  docker run -it -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  221  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  222  docker run -d -p 8081:8080 -e PBA=holamundo2 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  223  docker run -it -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  224  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven bash
+  225  docker ps -a
+  226  docker stop f80fe87da716 
+  227  docker stop d0a492f53349
+  228  docker ps -a
+  229  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven bash
+  230  docker run -it -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  231  docker ps 
+  232  docker ps -a
+  233  docker run -it -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  234  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  235  docker run -d -p 8081:8080 -e PBA=holamundo2 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  236  docker run -it -p 8090:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  237  docker run -it -p 8090:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  238  docker ps
+  239  docker ps -a
+  240  docker stop 7679feaaecff
+  241  docker stop 80edae3e2105
+  242  docker stop e7ffabb0c8ca
+  243  docker stop eaf94641fb8b
+  244  docker ps -a
+  245  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  246  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven
+  247  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  248  docker run -d -p 8081:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  249  docker ps 
+  250  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven
+  251  docker sp
+  252  docker ps
+  253  docker stop 6fe42a2f6d4a
+  254  docker stop 8c78aa365a29
+  255  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven
+  256  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  257  docker ps
+  258  docker stop 4b68869c2c65
+  259  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven
+  260  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  261  docker stop 4b68869c2c65
+  262  docker ps
+  263  docker stop aada340f0f3b
+  264  docker run -it -p 8080:8080 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven
+  265  docker ps
+  266  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  267  docker run -d -p 8081:8080 -e PBA=holamundo2 -v /home/gustavo/curso-dgp/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  268  nano readme.txt
+  269  git -version
+  270  git
+  271  ls
+  272  cd..
+  273  cd ..
+  274  ll
+  275  cd vertx-sample
+  276  ll
+  277  cd target
+  278  ll
+  279  nano Dockerfile
+  280  sudo nano Dockerfile
+  281  cat Dockerfile
+  282  sudo nano Dockerfile
+  283  docker build -t curso13Calculadora .
+  284  docker build -t . curso13Calculadora 
+  285  docker login
+  286  docker build -t . curso13Calculadora 
+  287  docker build -t curso13Calculadora .
+  288  docker build -t curso13calculadora .
+  289  docker images
+  290  docker push curso13calculadora
+  291  docker push curso13/curso13calculadora
+  292  docker login
+  293  docker push curso13calculadora
+  294  sudo docker push curso13calculadora
+  295  docker images
+  296  docker push curso13calculadora
+  297  LL
+  298  ll
+  299  cd ..
+  300  ll
+  301  cd src
+  302  ll
+  303  cd main
+  304  kk
+  305  ll
+  306  cd java
+  307  ll
+  308  cd mx
+  309  cd unam
+  310  cd dgpe
+  311  ll
+  312  cd sample
+  313  ll
+  314  cd controller
+  315  ll
+  316  pws
+  317  pwd
+  318  cd ..
+  319  ll
+  320  cd target
+  321  ll
+  322  ls
+  323  cat Dockerfile
+  324  docker ps
+  325  docker images
+  326  docker build -t curso13/calculadora13 .
+  327  docker images
+  328  docker push curso13/calculadora13 
+  329  cd ..
+  330  ls
+  331  ll
+  332  rm -rf .git
+  333  rm .gitignore 
+  334  ll
+  335  cd ..
+  336  git clone https://github.com/dgpeCurso13/EjemploFinal.git 
+  337  ll
+  338  cd EjemploFinal
+  339  git add.
+  340  git add .
+  341  git commit "proyecto Final"
+  342  git commit -m "proyecto Final"
+  343  git config --global user.email "you@example.com"
+  344  git config --global user.email "dgpe.curso.13@gmail.com"
+  345  git config --global user.name
+  346  git config --global user.name "curso13"
+  347  git commit -m "proyecto Final"
+  348  git push
+  349  cd ..
+  350  ll
+  351  cd vertx-sample
+  352  ll
+  353  cd examen2
+  354  ll
+  355  docker run -it -p 8080:8080 -v /home/gustavo/examen2/:/vertx kebblar/jdk18-utf8-debug-maven
+  356  docker run -it -p 8080:8080 -v /home/gustavo/examen2/vertx-sample:/vertx kebblar/jdk18-utf8-debug-maven
+  357  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/examen2/vertx-sample/: /vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  358  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/examen2/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  359  docker run -it -p 8080:8080 -v /home/gustavo/examen2/vertx-sample:/vertx kebblar/jdk18-utf8-debug-maven
+  360  docker ps
+  361  docker ps -a
+  362  docker stop 4af42efe14b4
+  363  docker run -it -p 8080:8080 -v /home/gustavo/examen2/vertx-sample:/vertx kebblar/jdk18-utf8-debug-maven
+  364  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/examen2/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  365  docker ps -a
+  366  docker stop 745f5e745bb0 
+  367  docker run -it -p 8080:8080 -v /home/gustavo/examen2/vertx-sample:/vertx kebblar/jdk18-utf8-debug-maven
+  368  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/examen2/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  369  docker run -d -p 8081:8080 -e PBA=holamundo -v /home/gustavo/examen2/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  370  clear
+  371  cd ..
+  372  clear
+  373  cd examen2
+  374  clear
+  375  history
+  376  clear
+  377  docker run -it -p 8080:8080 -v /home/gustavo/examen2/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven
+  378  docker ps
+  379  docker stop bdf4b449a78c
+  380  docker stop 8081346c0818
+  381  docker run -it -p 8080:8080 -v /home/gustavo/examen2/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven
+  382  docker ps
+  383  docker run -d -p 8080:8080 -e PBA=holamundo -v /home/gustavo/examen2/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  384  docker run -d -p 8081:8080 -e PBA=holamundo2 -v /home/gustavo/examen2/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven java -jar /vertx/target/sample-1.0-SNAPSHOT-fat.jar
+  385  docker ps
+  386  docker stop 81b489a39f65
+  387  docker stop 267de44be5e4
+  388  docker run -it -p 8080:8080 -v /home/gustavo/examen2/vertx-sample/:/vertx kebblar/jdk18-utf8-debug-maven
+  389  sudo service haproxy start
+  390  sudo apt-get update
+  391  sudo apt-get install haproxy
+  392  ll
+  393  haproxy -version
+  394  nano etc/default/haproxy
+  395  cd ..
+  396  nano etc/default/haproxy
+  397  cd examen2
+  398  nano /etc/default/haproxy
+  399  nano /etc/default/haproxy.cfg
+  400  nano /etc/haproxy/haproxy.cfg
+  401  docker ps
+  402  nano /etc/haproxy/haproxy.cfg
+  403  docker -d -p 8081:8080 -v /home:/vertx-sample -e PBA=holaMundo8081 kebblar/jdk18-utf8-debug-maven java -jar /vertx-sample/target/sample-1.0-SNAPSHOT-fat.jar
+  404  docker -d -p 8081:8080 -v /home/gustavo/examen2/vertx-sample/:/vertx-sample -e PBA=holaMundo8081 kebblar/jdk18-utf8-debug-maven java -jar /vertx-sample/target/sample-1.0-SNAPSHOT-fat.jar
+  405  docker run -d -p 8081:8080 -v /home/gustavo/examen2/vertx-sample/:/vertx-sample -e PBA=holaMundo8081 kebblar/jdk18-utf8-debug-maven java -jar /vertx-sample/target/sample-1.0-SNAPSHOT-fat.jar
+  406  docker run -d -p 8082:8080 -v /home/gustavo/examen2/vertx-sample/:/vertx-sample -e PBA=holaMundo8081 kebblar/jdk18-utf8-debug-maven java -jar /vertx-sample/target/sample-1.0-SNAPSHOT-fat.jar
+  407  docker run -d -p 8083:8080 -v /home/gustavo/examen2/vertx-sample/:/vertx-sample -e PBA=holaMundo8083 kebblar/jdk18-utf8-debug-maven java -jar /vertx-sample/target/sample-1.0-SNAPSHOT-fat.jar
+  408  docker ps
+  409  docker stop 3b48c7368e2e
+  410* docker run -d -p 8082:8080 -v /home/gustavo/examen2/vertx-sample/:/vertx-sample -e PBA=holaMundo8082 kebblar/jdk18-utf8-debug-maven java -jar /vertx-sample/target/sample-1.0-SN
+  411  sudo service haproxy start
+  412  docker build -t curso13/examen2 .
+  413  ll
+  414  cd vertx-sample
+  415  ll
+  416  cd target
+  417  ll
+  418  nano Dockerfile
+  419  sudo nano Dockerfile
+  420  cat Dockerfile
+  421  docker build -t curso13/examen2 .
+  422  sudo nano Dockerfile
+  423  docker images
+  424  clear
+  425  docker login
+  426  docker push curso13/examen2
+  427  ll
+  428  sudo nano Dockerfile
+  429  sudo nano entrypoint13.sh
+  430  docker build . -t curso13/examen2
+  431  docker images
+  432* 
+  433  docker images
+  434  docker rm c9bc89a814c5
+  435  docker rmi c9bc89a814c5
+  436  docker rmi 16696bf67310
+  437  docker rmi -f 16696bf67310
+  438  docker ps -a
+  439  docker ps
+  440  docker stop 1e5998b7ef0b
+  441  docker stop $(docker ps -aq)
+  442  docker ps
+  443  docker rmi -f 16696bf67310
+  444  docker images
+  445  docker rmi -f b5ad38a6dff9
+  446  docker rmi -f 16696bf67310
+  447  docker images
+  448  docker build . -t curso13/examen2
+  449  docker images
+  450  docker run -d -p 8080:8080 curso13/examen2
+  451  docker images
+  452  docker rmi -f 2bc00c674e9d
+  453  chmod 777 entrypoint13.sh
+  454  sudo chmod 777 entrypoint13.sh
+  455  docker build . -t curso13/examen2
+  456  docker run -d -p 8080:8080 curso13/examen2
+  457  docker push curso13/examen2
+  458  ll
+  459  cat Dockerfile
+  460  cat entrypoint.sh
+  461  cat entrypoint13.sh
+  462  history >OSCAR.TXT
+  463  sudo history>OSCAR.TXT
+  464  sudo history > comandosMiercoles.txt
+  465  sudo history > comandos.txt
+  466  cd ..
+  467  sudo history > comandos.txt
+  468  history>comandos.txt
